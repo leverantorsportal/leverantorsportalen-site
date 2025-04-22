@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leverantörsportalen</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #222222;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      text-align: center;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    main {
+      padding: 3rem 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 2rem;
+    }
+    .upload-box {
+      border: 2px dashed #aaa;
+      padding: 2rem;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #fafafa;
+    }
+    .upload-box:hover {
+      background-color: #f0f0f0;
+    }
+    footer {
+      font-size: 0.9rem;
+      color: #888;
+      padding: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo" onclick="location.reload()">Leverantörsportalen</div>
+    <div></div>
+  </header>
+
+  <main>
+    <h1>Välkommen</h1>
+    <p>Portalen för att ladda upp och hantera dina artikeldata. Denna version är för test.</p>
+
+    <div class="upload-box" onclick="alert('Denna funktion är inte aktiv ännu. Snart kan du ladda upp din Excel-fil här!')">
+      Klicka här för att ladda upp fil
+    </div>
+  </main>
+
+  <footer>
+    Kontakta support@leverantorsportalen.se vid frågor.
+  </footer>
+</body>
+</html>
