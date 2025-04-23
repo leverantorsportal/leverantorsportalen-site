@@ -1,73 +1,70 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leverantorsportalen</title>
-  <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leverantörsportalen</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background-color: #ffffff;
-      color: #111;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      text-align: center;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
     }
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 2rem;
-      background-color: #f7f7f7;
-      border-bottom: 1px solid #eee;
-    }
-    .logo-text {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #333;
-      cursor: pointer;
-    }
-    .form-toggle {
-      font-size: 1rem;
-      color: #0070f3;
-      cursor: pointer;
-      text-decoration: underline;
-    }
-    main {
-      padding: 5rem 1rem 2rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      color: #222;
       margin-bottom: 2rem;
     }
-    footer {
-      font-size: 0.9rem;
-      color: #777;
-      padding: 2rem;
+    h1 {
+      font-size: 1.5rem;
     }
-    footer a {
-      color: #0070f3;
+    a.login-button {
+      background-color: #0070f3;
+      color: white;
+      padding: 0.5rem 1rem;
       text-decoration: none;
+      border-radius: 5px;
+    }
+    a.login-button:hover {
+      background-color: #0059c9;
+    }
+    .hero {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 2rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: #444;
     }
   </style>
 </head>
 <body>
   <header>
-    <span class="logo-text">Leverantorsportalen</span>
-    <div class="form-toggle" onclick="location.href='mailto:kontakt@leverantorsportal.se'">Kontakta oss</div>
+    <h1>Leverantörsportalen</h1>
+    <a href="/login.html" class="login-button">Logga in</a>
   </header>
 
-  <main>
-    <h1>Effektivare hantering av artikeldata – utan Excel-kaos.</h1>
-    <p>En portal för leverantörer som vill skicka in korrekt produktinformation, för godkännande och smidig integration.</p>
-    <p>Testas för närvarande i samarbete med detaljhandel. 
-       <br>Vill du vara med och forma framtidens leverantörsflöde? Kontakta oss.</p>
-  </main>
-
-  <footer>
-    <a href="mailto:kontakt@leverantorsportal.se">kontakt@leverantorsportal.se</a>
-  </footer>
+  <div class="hero">
+    <h2>Smidigare väg från leverantör till rätt masterdata</h2>
+    <p>
+      Leverantörsportalen är byggd för företag som har utmaningar med att ta emot produktinformation och artikeldata från sina leverantörer.
+    </p>
+    <p>
+      Adminanvändare kan definiera egna fältstrukturer, krav och regler – leverantörer får automatiska valideringar vid uppladdning.
+      Med AI-hjälp sker analys i realtid och påminnelser skickas automatiskt om något saknas.
+    </p>
+    <p>
+      Portalen är enkel att komma igång med – inga integrationer krävs, men kan enkelt skalas upp vid behov.
+    </p>
+  </div>
 </body>
 </html>
