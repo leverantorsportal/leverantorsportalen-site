@@ -66,10 +66,37 @@
   </section>
 
   <section>
-    <h2>Kommande funktioner</h2>
-    <p>- Hantera fältstruktur / datamodell</p>
-    <p>- Översikt över uppladdade filer</p>
-    <p>- Rättighetsstyrning</p>
+    <h2>Snabbnavigation</h2>
+    <button onclick="location.href='dashboard.html'">Gå till Företagsanvändarvy</button>
+    <button onclick="location.href='upload.html'">Testa Leverantörsvy</button>
+  </section>
+
+  <section>
+    <h2>Roller och rättigheter</h2>
+    <ul>
+      <li><strong>Admin:</strong> Full kontroll. Skapa användare och leverantörer, definiera fältstruktur, se uppladdade filer, hantera konton och rättigheter.</li>
+      <li><strong>Företagsanvändare:</strong> Kan validera och godkänna uppladdningar. Saknar behörighet att skapa konton eller redigera struktur.</li>
+      <li><strong>Leverantör:</strong> Har endast tillgång till egen vy, laddar upp filer och får realtidsfeedback baserat på de krav admin har satt.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Systemflöde</h2>
+    <ol>
+      <li>Endast Admin kan skapa konton och bjuda in andra användare.</li>
+      <li>Vid inbjudan anges roll (företagsanvändare eller leverantör).</li>
+      <li>Alla loggar in via <code>login.html</code>, men åtkomst styrs av rollen.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Sidstruktur</h2>
+    <ul>
+      <li><code>login.html</code>: Inloggning (inbjudan krävs).</li>
+      <li><code>admin.html</code>: Adminpanel för kontohantering och struktur.</li>
+      <li><code>dashboard.html</code>: Företagsanvändarvy – data, status, rapporter.</li>
+      <li><code>upload.html</code>: Leverantörsvy – ladda upp och få feedback.</li>
+    </ul>
   </section>
 </body>
 </html>
