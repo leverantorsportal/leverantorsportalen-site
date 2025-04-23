@@ -1,18 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="sv">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leverantörsportalen</title>
+  <title>Leverantorsportalen</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <style>
     body {
       margin: 0;
       padding: 0;
       background-color: #ffffff;
-      color: #222222;
+      color: #111;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      min-height: 100vh;
       text-align: center;
     }
     header {
@@ -20,61 +19,55 @@
       justify-content: space-between;
       align-items: center;
       padding: 1rem 2rem;
-      border-bottom: 1px solid #e0e0e0;
+      background-color: #f7f7f7;
+      border-bottom: 1px solid #eee;
     }
-    .logo {
+    .logo-text {
       font-size: 1.2rem;
       font-weight: bold;
+      color: #333;
       cursor: pointer;
+    }
+    .form-toggle {
+      font-size: 1rem;
+      color: #0070f3;
+      cursor: pointer;
+      text-decoration: underline;
     }
     main {
-      padding: 3rem 1rem;
-      max-width: 600px;
-      margin: 0 auto;
+      padding: 5rem 1rem 2rem;
     }
     h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-    p {
-      font-size: 1rem;
-      color: #555;
+      font-size: 2.5rem;
+      color: #222;
       margin-bottom: 2rem;
-    }
-    .upload-box {
-      border: 2px dashed #aaa;
-      padding: 2rem;
-      border-radius: 8px;
-      cursor: pointer;
-      background-color: #fafafa;
-    }
-    .upload-box:hover {
-      background-color: #f0f0f0;
     }
     footer {
       font-size: 0.9rem;
-      color: #888;
+      color: #777;
       padding: 2rem;
+    }
+    footer a {
+      color: #0070f3;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo" onclick="location.reload()">Leverantörsportalen</div>
-    <div></div>
+    <span class="logo-text">Leverantorsportalen</span>
+    <div class="form-toggle" onclick="location.href='mailto:kontakt@leverantorsportal.se'">Kontakta oss</div>
   </header>
 
   <main>
-    <h1>Välkommen</h1>
-    <p>Portalen för att ladda upp och hantera dina artikeldata. Denna version är för test.</p>
-
-    <div class="upload-box" onclick="alert('Denna funktion är inte aktiv ännu. Snart kan du ladda upp din Excel-fil här!')">
-      Klicka här för att ladda upp fil
-    </div>
+    <h1>Effektivare hantering av artikeldata – utan Excel-kaos.</h1>
+    <p>En portal för leverantörer som vill skicka in korrekt produktinformation, för godkännande och smidig integration.</p>
+    <p>Testas för närvarande i samarbete med detaljhandel. 
+       <br>Vill du vara med och forma framtidens leverantörsflöde? Kontakta oss.</p>
   </main>
 
   <footer>
-    Kontakta support@leverantorsportalen.se vid frågor.
+    <a href="mailto:kontakt@leverantorsportal.se">kontakt@leverantorsportal.se</a>
   </footer>
 </body>
 </html>
