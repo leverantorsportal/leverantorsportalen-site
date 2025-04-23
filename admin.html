@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adminpanel – Leverantorsportalen</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 {
+      color: #222;
+    }
+    section {
+      background: #fff;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    label {
+      font-weight: 500;
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #0070f3;
+      color: white;
+      margin-top: 1.5rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0059c9;
+    }
+  </style>
+</head>
+<body>
+  <h1>Adminpanel</h1>
+  
+  <section>
+    <h2>Skapa ny användare</h2>
+    <form>
+      <label for="email">E-postadress</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="role">Roll</label>
+      <select id="role" name="role" required>
+        <option value="">Välj roll</option>
+        <option value="user">Företagsanvändare</option>
+        <option value="supplier">Leverantör</option>
+      </select>
+
+      <button type="submit">Skapa och skicka inbjudan</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Kommande funktioner</h2>
+    <p>- Hantera fältstruktur / datamodell</p>
+    <p>- Översikt över uppladdade filer</p>
+    <p>- Rättighetsstyrning</p>
+  </section>
+</body>
+</html>
